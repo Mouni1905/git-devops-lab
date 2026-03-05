@@ -8,4 +8,3 @@ Payment module added
 Modyfying app
 Hello app
 Gitlab
-bad change
