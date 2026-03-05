@@ -1,0 +1,10 @@
+Devops git lab
+Learning git fundamentals
+HEAD
+Payment service integration
+
+Payment module added
+ feature-payment
+Modyfying app
+Hello app
+Gitlab

@@ -1,0 +1,33 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@ve
+
+    - name: Install node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+
+    - name: Run script
+      run: node app.js
+
+
+    - name: Adding testing stage
+      run: |
+      echo " Running tests"
+      node app.js | grep "CI Pipeline"
+
+    - name: Deploy step
+      run: echo "Deploying to production"
+
